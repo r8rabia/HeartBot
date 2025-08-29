@@ -1,0 +1,1 @@
+{"timestamp": "2025-08-28 16:01:11", "input_data": {"age": 20.0, "restingbp": 80.0, "cholesterol": 100.0, "maxhr": 190.0, "oldpeak": 5.0, "sex": "Unknown", "chestpaintype": "ATA", "restingecg": "Normal", "exerciseangina": "N", "st_slope": "Flat", "fastingbs": 1}, "prediction": 1, "probability": 0.5839327145938686}

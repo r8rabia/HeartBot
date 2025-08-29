@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart Disease Predictor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to bottom right, #c31432, #240b36, #1c1c64, #ffa17f);
+      align-items: center;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 20px;
+      overflow: hidden;
+    }
+    
+    .splash-container {
+      max-width: 800px;
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .app-title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    
+    .splash-text {
+      max-width: 600px;
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      margin: 0 auto 30px;
+    }
+    
+    .highlight {
+      font-weight: bold;
+      color: #ff8c8c;
+    }
+    
+    .line {
+      margin: 25px auto;
+      height: 3px;
+      background: linear-gradient(to right, transparent, rgb(255, 255, 255), transparent);
+      width: 80%;
+    }
+    
+    .btn-get-started {
+      background: linear-gradient(to right, #ff5f6d, #ffc371);
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 95, 109, 0.4);
+      margin-top: 20px;
+    }
+    
+    .btn-get-started:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 7px 20px rgba(255, 95, 109, 0.6);
+    }
+    
+    .heart-icon {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ff5f6d;
+      animation: heartbeat 1.5s infinite;
+    }
+    
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.1); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    
+    .features {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+    
+    .feature {
+      flex: 0 0 30%;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    
+    .feature:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-5px);
+    }
+    
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="splash-container">
+    <div class="heart-icon">❤️</div>
+    <h1 class="app-title">Heart Disease Risk Predictor</h1>
+    
+    <div class="splash-text">
+      <p>In Pakistan, <span class="highlight">30 to 40 percent</span> of all deaths are due to cardiovascular diseases.</p>
+      <p>Heart attack is the <span class="highlight">number one killer</span> in the country.</p>
+    </div>
+    
+    <div class="line"></div>
+    
+    <p class="mb-4">This AI-powered tool helps you assess your risk of heart disease based on your health data which you provide.</p>
+    
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">📊</div>
+        <h3>Risk Assessment</h3>
+        <p>Get personalized heart disease risk prediction.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💡</div>
+        <h3>Health Advice</h3>
+        <p>Receive tailored health recommendations.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📱</div>
+        <h3>Track Progress</h3>
+        <p>Monitor your health metrics over time.</p>
+      </div>
+    </div>
+    
+    <a href="/predict_form" class="btn btn-get-started">Get Started</a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
